@@ -6,8 +6,9 @@ reviewers:
 - sthaha
 - raptorsun
 - jan--f
-- JoaoBraveCoding
 - juanrh
+- rexagod
+- machine424
 
 approvers:
 - simonpasquier
@@ -15,8 +16,9 @@ approvers:
 - sthaha
 - raptorsun
 - jan--f
-- JoaoBraveCoding
 - juanrh
+- rexagod
+- machine424
 
 emeritus_approvers:
 - LiliC
@@ -26,3 +28,4 @@ emeritus_approvers:
 - arajkumar
 - PhilipGough
 - bison
+- JoaoBraveCoding
