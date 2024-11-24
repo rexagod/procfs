@@ -189,6 +189,7 @@ func parseCPUInfoX86(info []byte) ([]CPUInfo, error) {
 }
 
 func parseCPUInfoARM(info []byte) ([]CPUInfo, error) {
+	fmt.Println(info)
 	scanner := bufio.NewScanner(bytes.NewReader(info))
 
 	firstLine := firstNonEmptyLine(scanner)
@@ -246,7 +247,11 @@ func parseCPUInfoARM(info []byte) ([]CPUInfo, error) {
 			cpuinfo[i].ModelName = field[1]
 		}
 	}
+	fmt.Println(cpuinfo)
+	fmt.Println(featuresLine)
 	fields := strings.SplitN(featuresLine, ": ", 2)
+	fmt.Println(fields)
+	fmt.Println(len(fields))
 	for i := range cpuinfo {
 		cpuinfo[i].Flags = strings.Fields(fields[1])
 	}
